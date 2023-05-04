@@ -1,0 +1,25 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again</p>
+        <input id="num-char" type="number" placeholder="How many characters?">
+        <br>
+        <p>No symbol</p>
+        <input id="no-sym" onclick="noSymbol" type="checkbox">
+        <p>No number</p>
+        <input id="no-num" onclick="noNum" type="checkbox">
+        <button onclick="getPassword()">Generate Password</button>
+        <div id="border"></div>
+        <div class="container">
+            <div id="password1-el" onclick="copy1()"></div>
+            <div id="password2-el" onclick="copy2()"></div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
