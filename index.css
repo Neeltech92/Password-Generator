@@ -34,6 +34,12 @@ button {
     color: white;
     font-weight: bold;
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
 span {
     display: block;
     color: #10B981;
